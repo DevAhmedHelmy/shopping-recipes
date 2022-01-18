@@ -1,11 +1,17 @@
 <div class="eow">
   <div class="col-xs-12">
-    <img src="" alt="" srcset="" />
+    <img
+      [src]="recipe.imagePath"
+      width="100"
+      height="100"
+      alt="{{ recipe.name }}"
+      srcset=""
+    />
   </div>
 </div>
 <div class="eow">
   <div class="col-xs-12">
-    <h1>Recipe Name</h1>
+    <h1>{{ recipe.name }}</h1>
   </div>
 </div>
 
@@ -21,6 +27,6 @@
         <li>delete recipe</li>
       </ul>
     </div>
-    <p>recipe description</p>
+    <p>{{ recipe.description }}</p>
   </div>
 </div>
